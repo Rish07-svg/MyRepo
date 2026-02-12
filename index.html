@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sample Upload Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-        form {
-            max-width: 400px;
-            position: relative;
-        }
-        label {
-            display: block;
-            margin-top: 15px;
-        }
-        button {
-            margin-top: 20px;
-            padding: 8px 16px;
-            cursor: pointer;
-        }
-        #noBtn {
-            position: absolute;
-        }
-    </style>
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <title>Be My Valentine 💖</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', cursive;
+    }
 
-    <h2>Sample HTML Form</h2>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
 
-    <form action="#" method="post">
-        <label>Name:</label>
-        <input type="text" name="name">
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 60px 80px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      position: relative;
+    }
 
-        <label>Email:</label>
-        <input type="email" name="email">
+    h1 {
+      font-size: 2.5rem;
+      color: #e63946;
+      margin-bottom: 50px;
+    }
 
-        <br><br>
-        <button type="submit">Yes</button>
-        <button type="button" id="noBtn">No</button>
-    </form>
+    .buttons {
+      position: relative;
+      height: 80px;
+    }
 
-    <script>
-        const noBtn = document.getElementById("noBtn");
+    button {
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
 
-        noBtn.addEventListener("mouseover", function () {
-            const maxX = window.innerWidth - noBtn.offsetWidth;
-            const maxY = window.innerHeight - noBtn.offsetHeight;
-
-            const randomX = Math.random() * maxX;
-            const randomY = Math.random() * maxY;
-
-            noBtn.style.left = randomX + "px";
-            noBtn.style.top = randomY + "px";
-        });
-    </script>
-
-</body>
-</html>
+    #yes {
+      background: #e63946;
+      color: white;
+      margin-right: 20px;
+      box-shadow: 0 10px 20px rgb
